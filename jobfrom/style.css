@@ -1,0 +1,679 @@
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+/* Top thin strip */
+.top-strip {
+    height: 28px;
+    background: #3c3c3c;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.font-controls span {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    padding: 2px 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.gov-logo {
+    height: 70px;
+    margin-right: 12px;
+}
+
+.title-text {
+    line-height: 1.2;
+}
+
+.main-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0a2d6f;
+}
+
+.sub-title {
+    font-size: 14px;
+    color: #0a2d6f;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.ojas-logo {
+    height: 65px;
+}
+
+/* Menu bar */
+.menu-bar {
+    background: #0b4f7c;
+    padding: 10px 20px;
+}
+
+.menu-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 22px;
+    font-size: 13px;
+}
+
+/* Registration strip */
+.page-title {
+    background: #f2f2f2;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+.container {
+    width: 98%;
+    margin: 10px auto;
+}
+
+/* Note */
+.note-box {
+    border: 1px solid #d6d6d6;
+    padding: 8px 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.red {
+    color: red;
+}
+
+/* Section */
+.section {
+    border: 1px solid #2b6cb0;
+}
+
+.section-title {
+    background: #3a79b8;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Rows */
+.row {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.field {
+    flex: 1;
+    font-size: 13px;
+}
+
+.field.small {
+    flex: 0.6;
+}
+
+.field.large {
+    flex: 1.5;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 3px;
+}
+/* Communication layout */
+.comm-row {
+    display: flex;
+    padding: 12px 15px;
+}
+
+.comm-col {
+    width: 50%;
+}
+
+/* EXACT vertical spacing */
+.comm-field {
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.comm-field label {
+    display: inline-block;
+    width: 135px;   /* 🔴 THIS CREATES SAME LEFT SPACE */
+    vertical-align: top;
+}
+
+/* Inputs */
+.comm-field input,
+.comm-field select {
+    width: 230px;
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+.comm-field textarea {
+    width: 230px;
+    height: 55px;
+    resize: none;
+    border: 1px solid #c0c0c0;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.section {
+    border: 1px solid #2f75b5;
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.section-title {
+    background: #2f75b5;
+    color: #fff;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+.od-row {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.od-col {
+    margin-right: 15px;
+}
+
+.od-col label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.wide {
+    width: 260px;
+}
+
+.checkbox-col label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Inputs */
+input[type="text"],
+select {
+    width: 180px;
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+}
+
+.black {
+    background: #000;
+    color: #000;
+}
+
+/* Notes */
+.hint {
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+/* =============================== */
+/* ✅ EXACT RADIO BUTTON FIX ONLY */
+/* =============================== */
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px; /* Yes / No gap SAME */
+    line-height: normal;
+}
+
+/* 🔥 remove browser default radio gap */
+.radio-group input[type="radio"] {
+    margin: 0 2px 0 0 !important;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+
+/* checkbox untouched */
+.checkbox-col input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+ .two-box{
+  display:flex;
+  gap:20px;
+  margin:20px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+}
+
+/* LEFT BOX */
+.lang-box{
+  width:60%;
+  border:1px solid #2f74b5;
+}
+
+.box-title{
+  background:#2f74b5;
+  color:white;
+  padding:8px;
+  font-weight:bold;
+}
+
+.lang-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.lang-table th{
+  background:#f3f3f3;
+  padding:6px;
+  border-bottom:1px solid #ddd;
+}
+
+.lang-table td{
+  text-align:center;
+  padding:8px;
+  border-bottom:1px solid #eee;
+}
+
+.lang-table input[type="text"]{
+  width:90%;
+  padding:5px;
+  background:#f1f1f1;
+  border:1px solid #ccc;
+}
+
+/* RIGHT BOX */
+.photo-box{
+  width:40%;
+  border:1px solid #e5bcbc;
+  background:#fff;
+}
+
+.photo-title{
+  background:#f8e1e1;
+  color:#c0392b;
+  padding:8px;
+  font-weight:bold;
+}
+
+.photo-box ol{
+  padding:12px 25px;
+  color:#333;
+}
+
+.photo-box li{
+  margin-bottom:6px;
+}
+
+
+.upload-box{
+  border:1px solid #2f74b5;
+  margin:20px;
+  font-family:Arial, sans-serif;
+  font-size:13px;
+}
+
+.upload-title{
+  background:#2f74b5;
+  color:#fff;
+  padding:8px;
+  font-weight:bold;
+}
+
+.upload-content{
+  padding:10px;
+}
+
+.note{
+  margin-bottom:10px;
+}
+
+.file-row{
+  margin-bottom:10px;
+}
+
+.upload-btn{
+  background:#2f74b5;
+  color:white;
+  border:none;
+  padding:6px 14px;
+  cursor:pointer;
+  font-size:13px;
+}
+
+.upload-btn:hover{
+  background:#255f96;
+}
+
+.size-note{
+  margin-top:12px;
+}
+.upload-box{
+  border:1px solid #2f74b5;
+  margin:20px;
+  font-family:Arial, sans-serif;
+  font-size:13px;
+}
+
+.upload-title{
+  background:#2f74b5;
+  color:#fff;
+  padding:8px;
+  font-weight:bold;
+}
+
+.upload-content{
+  padding:10px;
+}
+
+.note{
+  margin-bottom:10px;
+}
+
+.file-row{
+  margin-bottom:10px;
+}
+
+.upload-btn{
+  background:#2f74b5;
+  color:white;
+  border:none;
+  padding:6px 14px;
+  cursor:pointer;
+  font-size:13px;
+}
+
+.upload-btn:hover{
+  background:#255f96;
+}
+
+.size-note{
+  margin-top:12px;
+}
+.declare-box{
+  border:1px solid #2f74b5;
+  margin:20px;
+  font-family:Arial, sans-serif;
+  font-size:13px;
+}
+
+.declare-title{
+  background:#2f74b5;
+  color:#fff;
+  padding:8px;
+  font-weight:bold;
+}
+
+.declare-content{
+  padding:10px;
+}
+
+.declare-text{
+  margin:4px 0;
+  line-height:1.4;
+}
+
+.declare-text.red{
+  color:red;
+}
+
+.declare-radio{
+  margin-top:10px;
+}
+
+.declare-radio label{
+  margin-right:15px;
+}
+
+.declare-radio input{
+  margin-right:3px;
+}
+
+
+.captcha-box{
+  border:1px solid #2f74b5;
+  margin:20px;
+  font-family:Arial, sans-serif;
+  font-size:13px;
+}
+
+.captcha-title{
+  background:#2f74b5;
+  color:#fff;
+  padding:8px;
+  font-weight:bold;
+}
+
+.captcha-content{
+  display:flex;
+  align-items:center;
+  padding:10px;
+}
+
+.captcha-code{
+  background:#ffa500;
+  color:#000;
+  font-weight:bold;
+  padding:6px 12px;
+  margin-right:20px;
+  font-size:16px;
+  letter-spacing:2px;
+}
+
+.captcha-input input{
+  width:90px;
+  padding:5px;
+  border:1px solid #c0c0c0;
+}
+.save-box{
+    border:1px solid #9bbce0;
+    margin:20px;
+    padding:20px 0;
+    text-align:center;
+}
+
+.save-btn{
+    background:#5cb85c;
+    color:#fff;
+    border:none;
+    padding:6px 18px;
+    font-size:13px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.save-btn:hover{
+    background:#4cae4c;
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f3f3f3;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 20px;
+border-bottom:3px solid #0b4a82;
+background:#fff;
+}
+
+.header-left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.header img{height:60px;}
+
+.header h2{
+margin:0;
+color:#0b4a82;
+font-size:20px;
+}
+
+.navbar{
+background:#0b4a82;
+padding:8px 20px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-right:15px;
+font-size:14px;
+}
+
+.container{
+width:95%;
+margin:15px auto;
+background:#fff;
+border:1px solid #ccc;
+}
+
+.note{
+padding:10px;
+font-size:13px;
+}
+
+.section{
+margin:15px;
+border:1px solid #0b4a82;
+}
+
+.section h3{
+margin:0;
+padding:8px;
+background:#3b79b3;
+color:white;
+font-size:14px;
+}
+
+.grid-5,.grid-4,.grid-2{
+display:grid;
+gap:12px;
+padding:10px;
+}
+
+.grid-5{grid-template-columns:repeat(5,1fr);}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+
+label{font-size:13px;}
+
+input,select,textarea{
+width:100%;
+padding:5px;
+border:1px solid #aaa;
+}
+
+textarea{height:50px;}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin:10px;
+}
+
+th,td{
+border:1px solid #aaa;
+padding:6px;
+text-align:center;
+}
+
+.red{color:red;font-size:12px;}
+
+.captcha{
+display:flex;
+gap:15px;
+padding:10px;
+}
+
+.captcha span{
+background:orange;
+padding:5px 15px;
+font-weight:bold;
+}
+
+.center{text-align:center;padding:20px;}
+
+.save{
+background:green;
+color:white;
+border:none;
+padding:8px 30px;
+cursor:pointer;
+} */
